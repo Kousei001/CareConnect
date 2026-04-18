@@ -396,27 +396,6 @@ footer {
   color: #e8a838;
 }
 
-/* ===== RESPONSIVE — TABLET ===== */
-
-@media (max-width: 900px) {
-  .doctor-profile {
-    flex-direction: column;
-  }
-
-  .profile-left {
-    width: 100%;
-  }
-
-  .profile-photo {
-    height: 200px;
-    font-size: 5rem;
-  }
-
-  .footer-grid {
-    flex-direction: column;
-  }
-}
-
 /* ===== RESPONSIVE — MOBILE ===== */
 
 @media (max-width: 768px) {
@@ -448,8 +427,14 @@ footer {
     padding: 1.5rem;
   }
 
+  .footer-grid {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+  
   .footer-bottom {
     flex-direction: column;
     text-align: center;
   }
 }
+

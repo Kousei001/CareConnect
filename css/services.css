@@ -348,10 +348,8 @@ footer {
 
 /* ==== RESPONSIVE MOBILE =====*/
 
-/* Tablet screens (max 768px wide) */
 @media (max-width: 768px) {
 
-  /* Hide the nav links by default on mobile */
   .nav-links {
     display: none;
     flex-direction: column;
@@ -364,42 +362,25 @@ footer {
     border-bottom: 1px solid #d0dce5;
   }
 
-  /* Show nav links when the hamburger is clicked */
   .nav-links.open {
     display: flex;
   }
 
-  /* Show the hamburger button on mobile */
   .hamburger {
     display: block;
   }
 
-  /* Make page hero text smaller */
   .page-hero h1 {
     font-size: 1.8rem;
   }
 
-  /* Stack footer columns on top of each other */
   .footer-grid {
     grid-template-columns: 1fr;
     gap: 30px;
   }
 
-  /* Stack footer bottom text */
   .footer-bottom {
     flex-direction: column;
     text-align: center;
-  }
-}
-
-/* Small phone screens (max 480px wide) */
-@media (max-width: 480px) {
-
-  section {
-    padding: 50px 16px;
-  }
-
-  .services-grid {
-    grid-template-columns: 1fr;
   }
 }

@@ -21,10 +21,7 @@ ul {
   list-style: none;
 }
 
-
-/* ============================================================
-    2. HEADER & NAVIGATION
-   ============================================================ */
+/* ==== HEADER & NAVIGATION =====*/
 
 header {
   position: sticky;
@@ -115,10 +112,7 @@ nav {
   color: #1a2b38;
 }
 
-
-/* ============================================================
-    3. PAGE HERO (banner at the top of the page)
-   ============================================================ */
+/* ==== PAGE HERO =====*/
 
 .page-hero {
   background-color: #0a4f6e;
@@ -153,10 +147,7 @@ nav {
   color: #e8a838;
 }
 
-
-/* ============================================================
-    4. CONTACT SECTION — TWO COLUMN LAYOUT
-   ============================================================ */
+/* ==== CONTACT SECTION =====*/
 
 .contact-section {
   background-color: #ffffff;
@@ -170,9 +161,7 @@ nav {
   align-items: start;
 }
 
-/* ============================================================
-    5. CONTACT INFO (left column)
-   ============================================================ */
+/* ==== CONTACT INFO =====*/
 
 .contact-info h2 {
   font-size: 1.9rem;
@@ -227,9 +216,7 @@ nav {
   color: #2e9b6b;
 }
 
-/* ============================================================
-    6. APPOINTMENT FORM (right column)
-   ============================================================ */
+/* ==== HEADER & NAVIGATION =====*/
 
 .form-box {
   background-color: #f5f7fa;
@@ -301,7 +288,6 @@ nav {
   box-shadow: 0 0 0 3px rgba(26, 127, 163, 0.12);
 }
 
-
 .form-group textarea {
   resize: vertical;
   min-height: 110px;
@@ -336,10 +322,7 @@ nav {
   margin-top: 14px;
 }
 
-
-/* ============================================================
-    7. FOOTER
-   ============================================================ */
+/* ==== FOOTER =====*/
 
 footer {
   background-color: #071e2b;
@@ -408,15 +391,10 @@ footer {
   color: #e8a838;
 }
 
+/* ==== MOBILE RESPONSIVE =====*/
 
-/* ============================================================
-    9. MOBILE RESPONSIVE STYLES
-   ============================================================ */
-
-/* Tablet screens (768px wide or smaller) */
 @media (max-width: 768px) {
 
-  /* Hide nav links by default on mobile */
   .nav-links {
     display: none;
     flex-direction: column;
@@ -429,23 +407,23 @@ footer {
     border-bottom: 1px solid #d0dce5;
   }
 
-  /* Show nav links when hamburger is clicked */
   .nav-links.open {
     display: flex;
   }
 
-  /* Show the hamburger button */
   .hamburger {
     display: block;
   }
 
-  /* Stack the two contact columns on top of each other */
   .contact-grid {
     grid-template-columns: 1fr;
     gap: 40px;
   }
 
-  /* Stack the footer columns */
+  .page-hero h1 {
+    font-size: 1.8rem;
+  }
+
   .footer-grid {
     grid-template-columns: 1fr;
     gap: 30px;
@@ -455,26 +433,5 @@ footer {
     flex-direction: column;
     text-align: center;
   }
-
-  /* Make the page hero title smaller */
-  .page-hero h1 {
-    font-size: 1.8rem;
-  }
 }
 
-/* Small phone screens (480px wide or smaller) */
-@media (max-width: 480px) {
-
-  section {
-    padding: 50px 16px;
-  }
-
-  /* Stack the two-column form rows into one column */
-  .form-row {
-    grid-template-columns: 1fr;
-  }
-
-  .form-box {
-    padding: 20px;
-  }
-}
