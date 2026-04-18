@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Home | CareConnect</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🏥</text></svg>">
+  <link rel="stylesheet" href="/css/index.css">
+</head>
+<body>
+
+  <!-- ========== HEADER / NAVIGATION ========== -->
+  <header>
+    <nav>
+
+      <!-- Logo -->
+      <a href="index.html" class="logo">
+        <span class="logo-icon">🏥</span>
+        <span class="logo-text">Care<span class="logo-highlight">Connect</span></span>
+      </a>
+
+      <!-- Navigation links -->
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html"class="active" >Home</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="doctors.html">Doctors</a></li>
+        <li><a href="contact.html" class="nav-btn">Book Appointment</a></li>
+      </ul>
+
+      <!-- Hamburger button (shows on mobile) -->
+      <button class="hamburger" onclick="toggleNav()">☰</button>
+
+    </nav>
+  </header>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero">
+    <div class="hero-content">
+      <p class="hero-badge">Trusted Healthcare Since 2010</p>
+      <h1>Your Health, <em>Our Priority</em></h1>
+      <p>CareConnect bridges you with world-class healthcare professionals. Book appointments, explore services, and access expert medical advice — all in one place.</p>
+      <div class="hero-buttons">
+        <a href="contact.html" class="btn-primary">Book Appointment →</a>
+        <a href="services.html" class="btn-outline">Explore Services</a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat">
+          <strong>50+</strong>
+          <span>Specialist Doctors</span>
+        </div>
+        <div class="stat">
+          <strong>30K+</strong>
+          <span>Patients Served</span>
+        </div>
+        <div class="stat">
+          <strong>98%</strong>
+          <span>Satisfaction Rate</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-image">
+      <img src="/img/building.jpg" alt="Modern hospital" />
+    </div>
+  </section>
+
+  <!-- ===== SERVICES ===== -->
+  <section class="services-section">
+    <div class="section-wrapper">
+      <p class="section-label">What We Offer</p>
+      <h2>Comprehensive Medical Services</h2>
+      <p class="section-desc">From routine check-ups to specialized procedures, our expert team is here to support every stage of your health journey.</p>
+
+      <div class="services-grid">
+        <div class="service-card">
+          <div class="service-icon">🩺</div>
+          <h3>General Consultation</h3>
+          <p>Primary care by board-certified physicians. Preventive care, diagnosis, and ongoing health management.</p>
+          <a href="services.html">Learn more →</a>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">🦷</div>
+          <h3>Dental Care</h3>
+          <p>Complete oral health services including cleaning, whitening, restorations, and orthodontics.</p>
+          <a href="services.html">Learn more →</a>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">🚑</div>
+          <h3>Emergency Support</h3>
+          <p>24/7 emergency care with rapid response teams equipped for all critical medical situations.</p>
+          <a href="services.html">Learn more →</a>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">🫀</div>
+          <h3>Cardiology</h3>
+          <p>Advanced heart care with ECG, echocardiography, stress testing, and specialist consultations.</p>
+          <a href="services.html">Learn more →</a>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">🧠</div>
+          <h3>Neurology</h3>
+          <p>Diagnosis and treatment of neurological disorders from migraines to complex brain conditions.</p>
+          <a href="services.html">Learn more →</a>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">👶</div>
+          <h3>Pediatrics</h3>
+          <p>Compassionate child healthcare covering developmental milestones, vaccinations, and illness treatment.</p>
+          <a href="services.html">Learn more →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== DOCTORS PREVIEW ===== -->
+  <section class="doctors-section">
+    <div class="section-wrapper">
+      <p class="section-label">Meet the Team</p>
+      <h2>Our Featured Specialists</h2>
+      <p class="section-desc">Highly qualified, compassionate doctors dedicated to your care.</p>
+
+      <div class="doctors-grid">
+        <div class="doctor-card">
+          <div class="doctor-photo">
+            <img src="/img/png/male01.png" alt="Anime Doctor">
+          </div>
+          <div class="doctor-info">
+            <span class="specialty-tag">Cardiology</span>
+            <h3>Dr. James Hartwell</h3>
+            <p>MD, FACC · 18 Years Experience</p>
+          </div>
+        </div>
+        <div class="doctor-card">
+          <div class="doctor-photo">
+            <img src="/img/png/male01.png" alt="Anime Doctor">
+          </div>
+          <div class="doctor-info">
+            <span class="specialty-tag">Neurology</span>
+            <h3>Dr. Amelia Ross</h3>
+            <p>MD, PhD · 14 Years Experience</p>
+          </div>
+        </div>
+        <div class="doctor-card">
+          <div class="doctor-photo">
+            <img src="/img/png/male01.png" alt="Anime Doctor">
+          </div>
+          <div class="doctor-info">
+            <span class="specialty-tag">Pediatrics</span>
+            <h3>Dr. Ethan Miller</h3>
+            <p>MD, FAAP · 11 Years Experience</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="center-button">
+        <a href="doctors.html" class="btn-primary">View All Doctors →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CTA BANNER ===== -->
+  <section class="cta-section">
+    <div class="section-wrapper">
+      <h2>Ready to Take Control of Your Health?</h2>
+      <p>Join thousands of patients who trust CareConnect for all their healthcare needs.</p>
+      <div class="cta-buttons">
+        <a href="contact.html" class="btn-dark">Book Appointment →</a>
+        <a href="doctors.html" class="btn-border-dark">Meet Our Doctors</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer>
+    <div class="footer-grid">
+
+      <!-- Brand column -->
+      <div class="footer-brand">
+        <a href="index.html" class="logo">
+          <span class="logo-icon">🏥</span>
+          <span class="logo-text white-logo">Care<span class="logo-highlight">Connect</span></span>
+        </a>
+        <p>A digital healthcare platform connecting patients with qualified medical professionals.</p>
+      </div>
+
+      <!-- Quick links -->
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="doctors.html">Doctors</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+
+      <!-- Services links -->
+      <div class="footer-col">
+        <h4>Services</h4>
+        <ul>
+          <li><a href="#">General Consultation</a></li>
+          <li><a href="#">Dental Care</a></li>
+          <li><a href="#">Emergency</a></li>
+          <li><a href="#">Cardiology</a></li>
+        </ul>
+      </div>
+
+      <!-- Contact info -->
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="#">123 Medical Drive, Phnom Penh</a></li>
+          <li><a href="#">+855 23 456 789</a></li>
+          <li><a href="#">info@careconnect.com</a></li>
+        </ul>
+      </div>
+
+    </div>
+
+    <!-- Footer bottom bar -->
+    <div class="footer-bottom">
+      <p>© 2026 CareConnect. All rights reserved.</p>
+      <p>Built by <a href="#">Looking for You Group</a> · AUPP</p>
+    </div>
+  </footer>
+
+
+  <!-- JavaScript for mobile menu -->
+  <script>
+    function toggleNav() {
+      var nav = document.getElementById('navLinks');
+      if (nav.style.display === 'flex') {
+        nav.style.display = 'none';
+      } else {
+        nav.style.display = 'flex';
+      }
+    }
+  </script>
+
+</body>
+</html>

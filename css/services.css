@@ -1,0 +1,405 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  color: #1a2b38;
+  background-color: #f5f7fa;
+  line-height: 1.7;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+/* ==== HEADER & NAVIGATION =====*/
+
+header {
+  position: sticky;
+  top: 0;
+  background-color: #ffffff;
+  border-bottom: 1px solid #d0dce5;
+  z-index: 100;
+}
+
+nav {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo-icon {
+  width: 38px;
+  height: 38px;
+  background-color: #0a4f6e;
+  color: #ffffff;
+  font-size: 22px;
+  font-weight: bold;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo-text {
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: #0a4f6e;
+}
+
+.logo-highlight {
+  color: #e8a838;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.nav-links a {
+  padding: 8px 16px;
+  border-radius: 8px;
+  font-size: 0.92rem;
+  font-weight: 500;
+  color: #1a2b38;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+  color: #0a4f6e;
+  background-color: #e8f0f5;
+}
+
+.nav-btn {
+  background-color: #0a4f6e;
+  color: #ffffff !important;
+  padding: 8px 20px !important;
+  border-radius: 50px !important;
+  font-weight: 600 !important;
+}
+
+.nav-btn:hover {
+  background-color: #1a7fa3 !important;
+}
+
+/* Hamburger button — hidden on desktop, shown on mobile */
+.hamburger {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 1.6rem;
+  cursor: pointer;
+  color: #1a2b38;
+}
+
+
+/* ==== PAGE HERO =====*/
+
+.page-hero {
+  background-color: #0a4f6e;
+  padding: 80px 24px;
+  text-align: center;
+}
+
+.page-hero h1 {
+  color: #ffffff;
+  font-size: 2.5rem;
+  margin-bottom: 16px;
+}
+
+.page-hero p {
+  color: rgba(255, 255, 255, 0.75);
+  font-size: 1.1rem;
+  max-width: 580px;
+  margin: 0 auto;
+}
+
+.breadcrumb {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  font-size: 0.85rem;
+  color: rgba(255, 255, 255, 0.5);
+  margin-bottom: 20px;
+}
+
+.breadcrumb a {
+  color: #e8a838;
+}
+
+/* ==== SECTION LAYOUT =====*/
+
+section {
+  padding: 80px 24px;
+}
+
+.section-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.section-head {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.section-label {
+  font-size: 0.82rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #0a4f6e;
+  margin-bottom: 10px;
+}
+
+.section-head h2 {
+  font-size: 2rem;
+  color: #1a2b38;
+  margin-bottom: 14px;
+}
+
+/* Subtitle text below the heading */
+.section-subtitle {
+  color: #5a7080;
+  font-size: 1rem;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+
+/* ==== SERVICES CARD =====*/
+
+.services-section {
+  background-color: #f5f7fa;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 24px;
+}
+
+.service-card {
+  background-color: #ffffff;
+  border: 1px solid #d0dce5;
+  border-radius: 14px;
+  padding: 28px;
+}
+
+.service-icon {
+  font-size: 2.4rem;
+  margin-bottom: 14px;
+}
+
+.service-card h3 {
+  font-size: 1.2rem;
+  color: #1a2b38;
+  margin-bottom: 10px;
+}
+
+.service-card p {
+  font-size: 0.92rem;
+  color: #5a7080;
+  margin-bottom: 0;
+}
+
+.card-link {
+  display: inline-block;
+  margin-top: 20px;
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: #0a4f6e;
+}
+
+.service-card:hover {
+  border-color: #0a4f6e;
+}
+
+/* ==== CALL TO ACTION =====*/
+
+.cta-section {
+  text-align: center;
+  padding: 80px 24px;
+  background-color: #ffffff;
+}
+
+.cta-section h2 {
+  font-size: 2rem;
+  color: #1a2b38;
+  margin-bottom: 16px;
+}
+
+.cta-section p {
+  color: #5a7080;
+  margin-bottom: 32px;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.cta-btn {
+  display: inline-block;
+  background-color: #0a4f6e;
+  color: #ffffff;
+  padding: 14px 36px;
+  border-radius: 50px;
+  font-weight: 700;
+  font-size: 0.95rem;
+}
+
+.cta-btn:hover {
+  background-color: #1a7fa3;
+}
+
+/* ==== FOOTER =====*/
+
+footer {
+  background-color: #071e2b;
+  color: rgba(255, 255, 255, 0.7);
+  padding: 60px 24px 30px;
+}
+
+.footer-grid {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr;
+  gap: 40px;
+  padding-bottom: 40px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.footer-brand p {
+  font-size: 0.9rem;
+  margin-top: 14px;
+  color: rgba(255, 255, 255, 0.55);
+  line-height: 1.8;
+}
+
+.white-logo {
+  color: #ffffff !important;
+}
+
+.footer-col h4 {
+  font-size: 0.82rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #ffffff;
+  margin-bottom: 18px;
+}
+
+.footer-col ul {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.footer-col ul a {
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.65);
+}
+
+.footer-col ul a:hover {
+  color: #e8a838;
+}
+
+.footer-bottom {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-top: 28px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.82rem;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.footer-bottom a {
+  color: #e8a838;
+}
+
+
+/* ==== RESPONSIVE MOBILE =====*/
+
+/* Tablet screens (max 768px wide) */
+@media (max-width: 768px) {
+
+  /* Hide the nav links by default on mobile */
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    right: 0;
+    background-color: #ffffff;
+    padding: 20px 24px;
+    border-bottom: 1px solid #d0dce5;
+  }
+
+  /* Show nav links when the hamburger is clicked */
+  .nav-links.open {
+    display: flex;
+  }
+
+  /* Show the hamburger button on mobile */
+  .hamburger {
+    display: block;
+  }
+
+  /* Make page hero text smaller */
+  .page-hero h1 {
+    font-size: 1.8rem;
+  }
+
+  /* Stack footer columns on top of each other */
+  .footer-grid {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  /* Stack footer bottom text */
+  .footer-bottom {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+/* Small phone screens (max 480px wide) */
+@media (max-width: 480px) {
+
+  section {
+    padding: 50px 16px;
+  }
+
+  .services-grid {
+    grid-template-columns: 1fr;
+  }
+}
