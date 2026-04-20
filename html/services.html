@@ -200,12 +200,15 @@
     </div>
   </footer>
 
-
-  <!-- ========== JAVASCRIPT ========== -->
+  <!-- JavaScript for mobile menu -->
   <script>
-    /* Toggle the mobile navigation menu open and closed */
     function toggleNav() {
-      document.getElementById('navLinks').classList.toggle('open');
+      var nav = document.getElementById('navLinks');
+      if (nav.style.display === 'flex') {
+        nav.style.display = 'none';
+      } else {
+        nav.style.display = 'flex';
+      }
     }
   </script>
 
